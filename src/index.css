@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+    user-select: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* Customize react-select */
+.drop-list {
+    /* appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none; */
+    background-position: calc(100% - 12px) center !important;
+    background: url("data:image/svg+xml,<svg height='20' width='20' viewBox='0 0 20 20' aria-hidden='true' class='svg' xmlns='http://www.w3.org/2000/svg'><path d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'></path></svg>")
+        no-repeat;
+    padding: 8px 45px 8px 16px;
+}
+
+.droplistInvalid > .css-13cymwt-control {
+    border-color: red;
+}
+
+/* Common class */
+.sm-page-btn {
+    background-color: #cccccc;
+    padding: 4px 8px;
+    margin: 0 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.md-page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 99999px;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.default {
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    outline: none;
+    padding: 8px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.default.textarea {
+    height: auto;
+}
+
+.default.icon {
+    padding-left: 45px;
+}
+
+.invalid {
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    padding: 8px 16px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.block-ellipsis {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    font-size: 15px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.activeTab {
+    color: #2563eb;
+    background-color: #ffffff;
+}
+
+.level,
+.status {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.level.normal {
+    background-color: #cccccc;
+}
+
+.status.normal,
+.level.priority {
+    background-color: #27a243;
+}
+
+.status.warning {
+    background-color: #f7bb07;
+}
+
+.status.emergency,
+.level.emergency {
+    background-color: #dc2626;
+}
+
+.progress-bar {
+    font-weight: 600;
+    color: #dbe1fa;
+    text-align: center;
+    padding: 6px;
+    line-height: 1;
+    border-radius: 9999px;
+}
+
+.progress-bar.full {
+    width: 100%;
+    background-color: #0077f7;
+}
+
+.progress-bar.percent60 {
+    width: 60%;
+    background-color: #f7bb07;
+}
+
+.progress-bar.percent30 {
+    width: 30%;
+    background-color: #d53343;
+}
+
+/* Custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
